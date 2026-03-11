@@ -1,11 +1,9 @@
-# AI Image Viewer – Basic
+# AI Image Metadata Viewer
 
-A lightweight offline viewer for AI-generated image metadata.
+A lightweight desktop viewer for metadata embedded in AI-generated images  
+(Stable Diffusion / ComfyUI / Automatic1111).
 
-Open an image and instantly view its prompt and generation parameters.  
-Designed for images generated with **Stable Diffusion / ComfyUI** workflows.
-
-The application runs completely **offline** — no telemetry, no internet connection required.
+Runs fully offline. No telemetry. No internet connection required.
 
 ---
 
@@ -13,32 +11,43 @@ The application runs completely **offline** — no telemetry, no internet connec
 
 Prebuilt Windows executable is available on the Releases page:
 
-https://github.com/sinanli1994/AI-ImageViewer-Basic/releases
+https://github.com/sinanli1994/ai-image-metadata-viewer/releases
 
 ---
 
 ## Features
 
+- View embedded metadata from AI-generated images
+- Supports Stable Diffusion and ComfyUI images
 - Grid thumbnail browsing
-- Open and browse entire folders
+- Folder browsing support
 - Drag & drop images or folders
-- View embedded metadata (ComfyUI, Stable Diffusion)
 - Floating sort menu (Name / Modified Time)
 - Keyboard navigation (Arrow keys / Enter / Delete)
-- Safe delete (images moved to system Recycle Bin)
-- Multi-language UI  
-  - English  
-  - Simplified Chinese  
-  - Traditional Chinese  
-  - Japanese  
+- Safe delete (moves images to system Recycle Bin)
+
+Interface
+
+- Clean distraction-free UI
+- Multi-language interface
+  - English
+  - Simplified Chinese
+  - Traditional Chinese
+  - Japanese
   - Korean
-- Remembers language and theme settings after restart
-- Clean and distraction-free interface
-- Fully offline – no telemetry, no internet connection required
+- Remembers language and theme settings
+
+Privacy
+
+- Fully offline
+- No telemetry
+- No internet connection required
 
 ---
 
 ## Installation (Source)
+
+Requires Python 3.10+
 
 Clone the repository and install dependencies:
 
@@ -69,7 +78,7 @@ python main.py
 To create a standalone Windows executable:
 
 ```bash
-pyinstaller --noconsole --onefile --icon=app.ico --add-data "app.ico;." --version-file=version.txt --name=AI_ImageViewer_Basic main.py
+pyinstaller --noconsole --onefile --icon=app.ico --add-data "app.ico;." --version-file=version.txt --name=AI_Image_Metadata_Viewer
 ```
 
 ---
