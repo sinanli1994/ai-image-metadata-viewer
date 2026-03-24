@@ -32,7 +32,7 @@ Prebuilt Windows executable is available on the [Releases](https://github.com/si
 ## Features
 
 - View embedded metadata from AI-generated images
-- Supports Stable Diffusion and ComfyUI images
+- Supports Stable Diffusion, ComfyUI, and Automatic1111 images
 - Grid thumbnail browsing
 - Folder browsing support
 - Folder refresh support
@@ -42,6 +42,10 @@ Prebuilt Windows executable is available on the [Releases](https://github.com/si
 - Keyboard navigation (Arrow keys / Enter / Delete)
 - Safe delete (moves images to system Recycle Bin)
 - Thumbnail loading status feedback
+- Card-based metadata detail panel
+- Structured summary for filename, resolution, and current image position
+- Dedicated sections for Model, LoRA, Positive, Negative, and Parameters
+- Improved parameter readability with structured key-value display
 
 ### Interface
 
@@ -53,7 +57,9 @@ Prebuilt Windows executable is available on the [Releases](https://github.com/si
   - Japanese
   - Korean
 - Remembers language and theme settings
+- Refined light and dark themes
 - Improved startup window sizing and centered launch
+- Improved empty-state and detail viewing experience
 
 ### Privacy
 
@@ -102,6 +108,24 @@ pyinstaller --noconsole --onefile --icon=app.ico --add-data "app.ico;." --versio
 ---
 
 ## Version
+
+### v1.2.0
+
+Major UI refinement update.
+
+New:
+- Redesigned metadata details with a new card-based panel
+- Added a summary section for filename, resolution, and current image position
+- Added dedicated sections for Model, LoRA, Positive, Negative, and Parameters
+
+Improvements:
+- Improved parameter readability with a clearer structured layout
+- Updated empty-state experience for a cleaner startup view
+- Refined light and dark theme styling
+- Improved thumbnail loading and refresh behavior
+- Improved overall UI polish and metadata viewing experience
+
+---
 
 ### v1.1.1
 
